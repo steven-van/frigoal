@@ -1,8 +1,9 @@
 import logo from "../../assets/imgs/png/logo-with-text.png";
+import defaultAvatar from "../../assets/imgs/svg/avatar.svg";
 
 const NavBar = () => {
   return (
-    <nav class="flex items-center justify-between flex-wrap bg-[#fafaf9] p-10">
+    <nav class="flex items-center justify-between flex-wrap bg-[#FAFAF9] p-10">
       <div className="w-full flex relative justify-center items-center">
         <div className="absolute left-0">
           <div class="w-44">
@@ -23,7 +24,7 @@ const NavBar = () => {
             Fridges
           </a>
           <a
-            href="#recipes"
+            href=""
             class="inline-block text-lg px-5 py-2 leading-none border-2 rounded-full text-black border-[#0BA95D] hover:border-transparent hover:text-white hover:bg-[#0BA95D] mt-4 lg:mt-0"
           >
             Recipes
@@ -32,9 +33,13 @@ const NavBar = () => {
         <div className="absolute right-0">
           <a
             href="#responsive-header"
-            class="inline-block text-lg px-5 py-2 leading-none border-2 rounded-full text-black border-[#0BA95D] hover:border-transparent hover:text-white hover:bg-[#0BA95D] mt-4 lg:mt-0"
+            class="overflow-hidden h-16 w-16 inline-block text-lg leading-none border-2 border-[#FEF5DA] rounded-full text-black hover:border-[#0BA95D] hover:text-white mt-4 lg:mt-0"
           >
-            Profile
+            <img
+              class="object-center h-20 w-20"
+              src={defaultAvatar}
+              alt="Avatar"
+            ></img>
           </a>
         </div>
       </div>
