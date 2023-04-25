@@ -16,25 +16,20 @@ const Footer = () => {
     },
   ];
 
-  const styleFooter = {
-    backgroundColor: "#F8BB17",
-    position: "fixed",
-    left: 0,
-    bottom: 0,
-    padding: "10px",
-  };
-
   return (
-    <div className="w-full" style={styleFooter}>
-      <div className="flex">
+    <div className="w-full bg-[#F8BB17] left-0 bottom-0 p-2 fixed">
+      <div className="flex justify-center pb-2 ">
         {footerItems.map((el) => (
-          <div className="flex-auto w-64 ">
+          <div className="w-32">
             <a href={el.link}>{el.label}</a>
           </div>
         ))}
       </div>
       <div className="flex justify-center">
-        <img className="w-10" src={GitHub} alt="GitHub" />
+        <img className="w-16" src={GitHub} alt="GitHub" />
+      </div>
+      <div className="justify-center pt-2">
+        <p>2023 LSI2 - APP</p>
       </div>
     </div>
   );
