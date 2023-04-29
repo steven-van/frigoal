@@ -10,7 +10,7 @@ const Profile = ({ firstName, lastName, email, password }) => {
 
   return (
     <div className="grid place-items-center pt-8">
-      <div className="text-center ">
+      <div className="text-center">
         <img className="h-48 w-48 rounded-full" src={Logo} />
         <p className="text-xl font-bold">Mohamad RESLAN</p>
       </div>
