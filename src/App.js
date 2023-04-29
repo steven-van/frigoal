@@ -1,14 +1,10 @@
 import logo from "./logo.svg";
 
-import Profile from "./pages/Profile";
-
 function App() {
   return (
     <div className="App">
-      <Profile />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-
         <p className="text-red-500">
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -20,7 +16,6 @@ function App() {
         >
           Learn React
         </a>
-        <Footer />
       </header>
     </div>
   );
