@@ -38,25 +38,21 @@ const notLoggedIn = () => {
             <Menu.Item>
               {({ active }) => (
                 <a
-                  href="#"
+                  href="#LogIn"
                   className={classNames(
                     active ? "bg-gray-100 text-gray-900" : "text-gray-700",
                     "px-4 py-2 w-full text-sm flex justify-start items-center"
                   )}
                 >
-                  <img
-                    class="w-10 mr-3"
-                    src={logoLogin}
-                    alt="logo login"
-                  ></img>
+                  <img class="w-10 mr-3" src={logoLogin} alt="logo login"></img>
                   Log in
                 </a>
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <button
-                  type="submit"
+                <a
+                  href="#SignUp"
                   className={classNames(
                     active ? "bg-gray-100 text-gray-900" : "text-gray-700",
                     "px-4 py-2 w-full text-sm flex justify-start items-center"
@@ -68,7 +64,7 @@ const notLoggedIn = () => {
                     alt="logo sign up"
                   ></img>
                   Sign up
-                </button>
+                </a>
               )}
             </Menu.Item>
           </div>
@@ -108,7 +104,7 @@ const loggedIn = () => {
             <Menu.Item>
               {({ active }) => (
                 <a
-                  href="#"
+                  href="#AccountSettings"
                   className={classNames(
                     active ? "bg-gray-100 text-gray-900" : "text-gray-700",
                     "px-4 py-2 w-full text-sm flex justify-start items-center"
