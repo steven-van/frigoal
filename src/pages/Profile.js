@@ -11,12 +11,12 @@ const Profile = ({ firstName, lastName, email, password }) => {
 
   return (
     <div>
-      <div className="grid place-items-center pt-8 h-screen">
+      <div className="grid md:w-full lg:w-full place-items-center pt-8 h-screen">
         <div className="text-center ">
           <img className="h-48 w-48 rounded-full" src={Logo} />
           <p className="text-xl font-bold">Mohamad RESLAN</p>
         </div>
-        <div className="mt-16">
+        <div className="">
           <div className="">
             <p className="text-xl font-bold">Profile</p>
             <p className="text-xs ">
