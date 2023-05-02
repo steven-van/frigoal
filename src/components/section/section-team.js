@@ -7,8 +7,10 @@ import Fandresena from "./../../assets/imgs/svg/fandresena.svg"
 
 
 const SectionTeam = () => {
+    const font = "font-montserrat font-thin";
+
     return (
-      <div className="flex justify-center items-center h-screen flex-col">
+      <div className={`${font} font-thin flex justify-center items-center h-screen flex-col mb-60`}>
         {/* Affichage du titre de la section */}
         <div>
             <p className="text-3xl md:text-4xl lg:text-6xl text-center text-black font-bold pb-10 md:mt-9">
