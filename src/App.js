@@ -1,10 +1,18 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Home from "./pages/Home";
+import Login from "./pages/Login";
+
 
 function App() {
   return (
     <div className="App">
+      <p className="text-5xl text-center">
+      FRIGOAL
+      </p>
+      <br></br><br></br>
+      <Login />
+      <br></br><br></br>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p className="text-red-500">
