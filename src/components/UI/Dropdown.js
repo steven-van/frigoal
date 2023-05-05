@@ -1,11 +1,11 @@
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 
-import defaultAvatar from "../../assets/imgs/svg/avatar.svg";
-import logoLogin from "../../assets/imgs/svg/logo-login.svg";
-import logoSignUp from "../../assets/imgs/svg/logo-sign-up.svg";
-import logoSignOut from "../../assets/imgs/svg/logo-sign-out.svg";
-import logoAccountSettings from "../../assets/imgs/svg/logo-account-setting.svg";
+import defaultAvatar from "../../assets/images/svg/avatar.svg";
+import logoLogin from "../../assets/images/svg/logo-login.svg";
+import logoSignUp from "../../assets/images/svg/logo-sign-up.svg";
+import logoSignOut from "../../assets/images/svg/logo-sign-out.svg";
+import logoAccountSettings from "../../assets/images/svg/logo-account-setting.svg";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -146,7 +146,7 @@ const loggedIn = () => {
 
 export default function Dropdown() {
   var login = false;
-  if (login == true) {
+  if (login === true) {
     return loggedIn();
   } else {
     return notLoggedIn();

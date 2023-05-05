@@ -1,4 +1,4 @@
-import Logo from "../assets/imgs/png/OK.jpg";
+import Logo from "../assets/images/png/OK.jpg";
 
 const Profile = ({ firstName, lastName, email, password }) => {
   const inputItems = [
