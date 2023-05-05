@@ -1,4 +1,4 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link, useLocation } from "react-router-dom";
 import Dropdown from "./Dropdown";
 import logo from "../../assets/images/svg/logo-with-text.svg";
 
@@ -8,7 +8,18 @@ const NavBar = () => {
                   active:border-transparent active:text-white active:bg-[#65C9FF] 
                   mt-4 lg:mt-0`;
 
+    const activePageClass = `text-white bg-[#65C9FF]`;
+
     const btnPaddingClass = "pr-8";
+
+    const location = useLocation();
+    const currentUrl = location.pathname;
+
+    const pages = [
+        { title: "Home", url: "/" },
+        { title: "Fridges", url: "/fridges" },
+        { title: "Recipes", url: "/recipes" }
+    ];
 
     return (
         <>
@@ -25,34 +36,17 @@ const NavBar = () => {
                         </Link>
                     </div>
                     <ul className="flex">
-                        <li className={btnPaddingClass}>
-                            <Link
-                                to="/"
-                                className={btnClass}
-                                replace
-                            >
-                                Home
-                            </Link>
-                        </li>
-
-                        <li className={btnPaddingClass}>
-                            <Link
-                                to="/fridges"
-                                className={btnClass}
-                                replace
-                            >
-                                Fridges
-                            </Link>
-                        </li>
-                        <li className={btnPaddingClass}>
-                            <Link
-                                to="/recipes"
-                                className={btnClass}
-                                replace
-                            >
-                                Recipes
-                            </Link>
-                        </li>
+                        {pages.map(page => (
+                            <li className={btnPaddingClass} key={page.url}>
+                                <Link
+                                    to={page.url}
+                                    className={`${btnClass} ${currentUrl === page.url ? activePageClass : ''}`}
+                                    replace
+                                >
+                                    {page.title}
+                                </Link>
+                            </li>
+                        ))}
                     </ul>
                     <div className="absolute right-0">
                         <Dropdown />
