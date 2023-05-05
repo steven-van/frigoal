@@ -15,7 +15,10 @@ const NavBar = () => {
             <nav className="flex items-center justify-between flex-wrap bg-[#FFFFFF] p-10">
                 <div className="w-full flex relative justify-center items-center">
                     <div className="absolute left-0">
-                        <Link to="/">
+                        <Link
+                            to="/"
+                            replace
+                        >
                             <div class="w-44">
                                 <img src={logo} alt="Frigoal Logo" />
                             </div>
@@ -26,6 +29,7 @@ const NavBar = () => {
                             <Link
                                 to="/"
                                 className={btnClass}
+                                replace
                             >
                                 Home
                             </Link>
@@ -35,6 +39,7 @@ const NavBar = () => {
                             <Link
                                 to="/fridges"
                                 className={btnClass}
+                                replace
                             >
                                 Fridges
                             </Link>
@@ -43,6 +48,7 @@ const NavBar = () => {
                             <Link
                                 to="/recipes"
                                 className={btnClass}
+                                replace
                             >
                                 Recipes
                             </Link>
