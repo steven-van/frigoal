@@ -1,7 +1,10 @@
 import logo from "../../assets/imgs/svg/logo-with-text.svg";
+import buttonFridge from "../../assets/imgs/svg/button-fridge.svg";
+
 import Dropdown from "./Dropdown";
 
 const NavBar = () => {
+  var login = true;
   return (
     <nav class="flex items-center justify-between flex-wrap bg-[#FFFFFF] p-10">
       <div className="w-full flex relative justify-center items-center">
@@ -30,8 +33,19 @@ const NavBar = () => {
             Recipes
           </a>
         </div>
-        <div className="absolute right-0">
-          <Dropdown />
+        <div className="flex flex-row justify-center items-center absolute right-0">
+          {login === true && (
+            <div className="h-14 w-14 bg-[#E1F2FF] mr-8 mb-1 flex justify-center items-center rounded-lg ">
+              <img
+                src={buttonFridge}
+                alt="Fridge Logo"
+                className="h-10 w-10"
+              ></img>
+            </div>
+          )}
+          <div className="">
+            <Dropdown />
+          </div>
         </div>
       </div>
     </nav>

@@ -146,7 +146,7 @@ const loggedIn = () => {
 
 export default function Dropdown() {
   var login = false;
-  if (login == true) {
+  if (login === true) {
     return loggedIn();
   } else {
     return notLoggedIn();
