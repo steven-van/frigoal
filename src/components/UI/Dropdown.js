@@ -18,7 +18,7 @@ const Dropdown = () => {
   return (
     <Menu as="div" className="relative inline-block text-left">
       <div>
-        <Menu.Button className="inline-flex bg-[#6097CE] overflow-hidden h-14 w-14 justify-center gap-x-1.5 rounded-full shadow-sm hover:ring-1 hover:ring--[#65C9FF]">
+        <Menu.Button className="inline-flex bg-[#6097CE] overflow-hidden h-12 w-12 md:h-14 md:w-14 justify-center gap-x-1.5 rounded-full shadow-sm hover:ring-1 hover:ring--[#65C9FF]">
           <img
             class="object-center w-full"
             src={defaultAvatar}
