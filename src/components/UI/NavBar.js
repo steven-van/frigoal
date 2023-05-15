@@ -45,20 +45,20 @@ const NavBar = () => {
         <div
           className={`${
             menuOpen ? "" : "hidden"
-          } w-full absolute top-10 md:relative md:top-0 md:flex items-center md:w-auto flex-col`}
+          } w-screen absolute top-10 md:relative md:top-0 md:flex py items-center md:w-auto flex-col bg-white md:bg-transparent`}
         >
-          <div class="flex flex-col justify-center gap-1 md:flex-row md:gap-4 text-sm lg:flex-grow">
+          <div class="flex flex-col justify-center px-8 gap-1 md:flex-row md:gap-4 text-sm lg:flex-grow ">
             {Button("/", "Home")}
             {Button("#Fridges", "Fridges")}
             {Button("#Recipes", "Recipes")}
           </div>
           {isLoggedIn ? (
-            <div class="flex flex-col justify-center gap-1 mt-1 md:flex-row md:gap-4 text-sm lg:flex-grow visible md:hidden">
+            <div class="flex flex-col justify-center px-8 gap-1 mt-1 md:flex-row md:gap-4 text-sm lg:flex-grow visible md:hidden">
               {Button("/Profile", "Account Settings")}
               {Button("#", "Sign out")}
             </div>
           ) : (
-            <div class="flex flex-col justify-center gap-1 mt-1 md:flex-row md:gap-4 text-sm lg:flex-grow visible md:hidden">
+            <div class="flex flex-col justify-center px-8 gap-1 mt-1 md:flex-row md:gap-4 text-sm lg:flex-grow visible md:hidden">
               {Button("/Login", "Log In")}
               {Button("/SignUp", "Sign Up")}
             </div>
