@@ -106,14 +106,27 @@ return (
 
           </div>
 
-          <div class="flex z-10 absolute">
+          {/* <div class="flex z-10 absolute">
             <div className={`flex-1 font-bold text-[20px] text-slate-50 ml-6 mt-[450px] lg:text-[35px] lg:mt-[360px] lg:ml-[50px] ${font}`}>
               Hey<br></br>Welcome<br></br>Back!
             </div>
 
-            <img className="flex-1 justify-center items-center -mb-[150px] w-[8vw] lg:ml-36" src={bonhomme} />
 
+            <img className="flex-1 justify-center items-center -mb-[150px] w-[27vw]" src={bonhomme} />
+          </div> */}
+
+
+          <div className={`z-7 absolute font-bold text-[20px] text-slate-50 ml-6 mt-[450px] lg:text-[35px] lg:mt-[360px] lg:ml-[50px] ${font}`}>
+            Hey<br></br>Welcome<br></br>Back!
           </div>
+
+
+          <div className="z-10 absolute">
+            <img className="justify-center items-center mt-[230px] ml-7 w-[23vw] md:mt-[120px] md:ml-[50px] lg:mt-[90px] lg:ml-[130px]" src={bonhomme} />
+          </div>
+            
+          
+
 
         </div>
 
