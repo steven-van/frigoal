@@ -19,11 +19,9 @@ const NavBar = () => {
   var isLoggedIn = false;
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
-  const LogoOnClick = () => {
-    navigate("/");
-  };
+  const LogoOnClick = () => {};
 
   return (
     <nav class="flex items-center justify-between flex-wrap bg-[#FFFFFF] m-10">

@@ -1,4 +1,5 @@
 export const ActionButton = (props) => {
+  console.log(props.color);
   return (
     <div>
       <button

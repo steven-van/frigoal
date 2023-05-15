@@ -1,5 +1,7 @@
 import Logo from "../assets/imgs/png/OK.jpg";
+import { ActionButton } from "../components/UI/Buttons";
 import Footer from "../components/UI/Footer";
+import NavBar from "../components/UI/NavBar";
 
 const Profile = ({ firstName, lastName, email, password }) => {
   const inputItems = [
@@ -11,6 +13,9 @@ const Profile = ({ firstName, lastName, email, password }) => {
 
   return (
     <div>
+      <div>
+        <NavBar />
+      </div>
       <div className="grid md:w-full lg:w-full place-items-center pt-8 h-screen">
         <div className="text-center ">
           <img className="h-48 w-48 rounded-full" src={Logo} />
@@ -39,6 +44,10 @@ const Profile = ({ firstName, lastName, email, password }) => {
               </div>
             ))}
           </div>
+        </div>
+        <div className="flex space-x-5">
+          <ActionButton title="Cancel" />
+          <ActionButton title="Save" color="#24B26E" />
         </div>
       </div>
       <Footer />
