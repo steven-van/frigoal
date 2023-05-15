@@ -1,4 +1,4 @@
-import GitHub from "../../assets/gitHubLogo.svg";
+import GitHub from "../../assets/images/svg/gitHubLogo.svg";
 
 const Footer = () => {
   const footerItems = [

@@ -1,4 +1,4 @@
-import Logo from "../assets/imgs/png/OK.jpg";
+import ProfileImg from "../assets/images/png/OK.jpg";
 
 const Profile = ({ firstName, lastName, email, password }) => {
   const inputItems = [
@@ -11,7 +11,7 @@ const Profile = ({ firstName, lastName, email, password }) => {
   return (
     <div className="grid place-items-center pt-8">
       <div className="text-center">
-        <img className="h-48 w-48 rounded-full" src={Logo} />
+        <img className="h-48 w-48 rounded-full" src={ProfileImg} alt="Profile img" />
         <p className="text-xl font-bold">Mohamad RESLAN</p>
       </div>
       <div className="mt-16">
