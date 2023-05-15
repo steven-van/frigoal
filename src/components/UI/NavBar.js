@@ -11,7 +11,7 @@ const NavBar = () => {
     const navigate = useNavigate();
 
     const btnClass = `inline-block lg:text-lg text-sm px-5 py-2 leading-none 
-    rounded-full text-black hover:border-transparent hover:text-white 
+    rounded-full text-black hover:border-transparent hover:text-white font-black
     hover:bg-[#65C9FF] active:border-transparent active:text-white active:bg-[#65C9FF]`;
 
     const changeLoggedIn = () => {

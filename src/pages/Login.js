@@ -1,7 +1,20 @@
+import Connexion from "../components/section/Connexion";
+import Footer from "../components/UI/Footer";
+import NavBar from "../components/UI/NavBar";
+
+
 const Login = () => {
-  return <div>
-    Login Page
-  </div>;
+  return (
+    <div>
+      <NavBar />
+      <br></br>
+      <Connexion></Connexion>
+      <br></br>
+      <br></br>
+      <Footer></Footer>
+    </div>
+
+  );
 };
 
 export default Login;
