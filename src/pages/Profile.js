@@ -6,7 +6,7 @@ import NavBar from "../components/UI/NavBar";
 import EditIcon from "@mui/icons-material/Edit";
 
 const Profile = ({ firstName, lastName, email, password }) => {
-  const [isModified, setModified] = useState(true);
+  const [isFocused, setFocused] = useState(true);
 
   const inputItems = [
     { label: "First Name", value: firstName, type: "text" },
@@ -39,8 +39,8 @@ const Profile = ({ firstName, lastName, email, password }) => {
                 <div>{item.label}</div>
                 <div className="flex items-center">
                   <input
-                    autoFocus
-                    disabled={isModified}
+                    autoFocus={isFocused}
+                    disabled={isFocused}
                     className="border-2 pl-2 border-black-900 relative h-10 w-96"
                     type={item.type}
                     value={item.value}
@@ -51,7 +51,7 @@ const Profile = ({ firstName, lastName, email, password }) => {
                   <div
                     className="absolute cursor-pointer right-0 pr-2"
                     onClick={() => {
-                      setModified(!isModified);
+                      setFocused(false);
                     }}
                   >
                     <EditIcon />
@@ -62,8 +62,20 @@ const Profile = ({ firstName, lastName, email, password }) => {
           </div>
         </div>
         <div className="flex space-x-5">
-          <ActionButton title="Cancel" color="white" />
-          <ActionButton title="Save" color="#74ceff" />
+          <div
+            onClick={() => {
+              setFocused(true);
+            }}
+          >
+            <ActionButton title="Cancel" color="white" />
+          </div>
+          <div
+            onClick={() => {
+              setFocused(true);
+            }}
+          >
+            <ActionButton title="Save" color="#74ceff" />
+          </div>
         </div>
       </div>
       <Footer />
