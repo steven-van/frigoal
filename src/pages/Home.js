@@ -3,7 +3,10 @@ import NavBar from "../components/UI/NavBar";
 const Home = () => {
   return (
     <div>
-      <NavBar />
+      <div>
+        <NavBar />
+      </div>
+      <div>hello</div>
     </div>
   );
 };
