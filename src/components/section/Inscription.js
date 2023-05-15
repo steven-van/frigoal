@@ -124,13 +124,13 @@ const Inscription = () =>{
                 </div>
       
                 <div class="flex z-8 absolute">
-                  <div className={`flex-1 font-bold text-[20px] text-slate-50 ml-6 mt-[450px] lg:text-[35px] lg:mt-[360px] lg:ml-[50px] ${font}`}>
+                  <div className={`flex-1 font-bold text-[20px] text-slate-50 ml-6 mt-[450px] lg:text-[35px] lg:mt-[430px] lg:ml-[50px] ${font}`}>
                     Hey<br></br>Welcome<br></br>To Frigoal !
                   </div>
                 </div>
 
                 <div class="flex z-10 absolute">
-                    <img className="flex-1 justify-center items-center -mb-[150px] w-[28vw] mt-[250px] ml-3 lg:ml-[130px] md:mt-[150px] lg:mt-[70px]" src={SignIn} />
+                    <img className="flex-1 justify-center items-center -mb-[150px] w-[30vw] mt-[250px] ml-3 lg:ml-[110px] md:mt-[150px] lg:mt-[100px]" src={SignIn} />
                 </div>
       
               </div>
