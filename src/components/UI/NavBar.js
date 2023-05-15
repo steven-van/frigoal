@@ -39,9 +39,9 @@ const NavBar = () => {
                 </div>
                 <div
                     className={`${menuOpen ? "" : "hidden"
-                        } w-full absolute top-10 md:relative md:top-0 md:flex items-center md:w-auto flex-col`}
+                        } w-screen absolute top-10 md:relative md:top-0 md:flex py items-center md:w-auto flex-col bg-white md:bg-transparent`}
                 >
-                    <div className="flex flex-col justify-center gap-1 md:flex-row md:gap-4 text-sm lg:flex-grow">
+                    <div className="flex flex-col justify-center px-8 gap-1 md:flex-row md:gap-4 text-sm lg:flex-grow">
                         <button
                             onClick={() => navigate("/")}
                             className={btnClass}
@@ -63,7 +63,7 @@ const NavBar = () => {
                     </div>
                     <div>
                         {isLoggedIn ? (
-                            <div className="flex flex-col justify-center gap-1 mt-1 md:flex-row md:gap-4 text-sm lg:flex-grow visible md:hidden">
+                            <div className="flex flex-col justify-center px-8 gap-1 mt-1 md:flex-row md:gap-4 text-sm lg:flex-grow visible md:hidden">
                                 <button
                                     onClick={() => navigate("/profile")}
                                     className={btnClass}
