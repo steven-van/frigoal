@@ -2,7 +2,7 @@ import frigoal from "./../../assets/imgs/svg/frigoal_lady.svg"
 
 
 const SectionFrigoal = () => {
-    const font = "font-montserrat font-thin";
+    const font = "font-montserrat";
 
     return (
         <div className={`${font} flex flex-wrap justify-center items-center mr-20`}>

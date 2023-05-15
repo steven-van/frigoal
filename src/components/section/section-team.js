@@ -31,7 +31,8 @@ const SectionTeam = () => {
                     {/* Nathalie LIU */}
                     <div className="flex justify-center items-center">
                         <div className="w-1/2 p-5 pt-12">
-                            <p className="text-1xl md:text-2xl lg:text-3xl text-black">Nathalie LIU</p>
+                            <p className="text-1xl md:text-2xl lg:text-3xl text-black">Nathalie</p>
+                            <p className="text-1xl md:text-2xl lg:text-3xl text-black">LIU</p>
                             <p className="text-1xl md:text-1xl lg:text-2xl text-[#6097CE]">
                                 Software Engineer
                             </p>
@@ -45,7 +46,8 @@ const SectionTeam = () => {
                     {/* Mohamad RESLAN */}
                     <div className="flex justify-center items-center">
                         <div className="w-1/2 p-5 pt-12">
-                            <p className="text-1xl md:text-2xl lg:text-3xl text-black">Mohamad RESLAN</p>
+                            <p className="text-1xl md:text-2xl lg:text-3xl text-black">Mohamad</p>
+                            <p className="text-1xl md:text-2xl lg:text-3xl text-black">RESLAN</p>
                             <p className="text-1xl md:text-1xl lg:text-2xl text-[#6097CE]">
                                 Software Engineer
                             </p>
@@ -59,7 +61,8 @@ const SectionTeam = () => {
                     {/* Steven VAN */}
                     <div className="flex justify-center items-center">
                         <div className="w-1/2 p-5 pt-12">
-                            <p className="text-1xl md:text-2xl lg:text-3xl text-black">Steven VAN</p>
+                            <p className="text-1xl md:text-2xl lg:text-3xl text-black">Steven</p>
+                            <p className="text-1xl md:text-2xl lg:text-3xl text-black">VAN</p>
                             <p className="text-1xl md:text-1xl lg:text-2xl text-[#6097CE]">
                                 Software Engineer
                             </p>
@@ -82,7 +85,8 @@ const SectionTeam = () => {
                             <img src={Christine} width="150" height="150"/>
                         </div>
                         <div className="w-1/2 p-5 pt-12">
-                            <p className="text-1xl md:text-2xl lg:text-3xl text-black">Christine LI</p>
+                            <p className="text-1xl md:text-2xl lg:text-3xl text-black">Christine</p>
+                            <p className="text-1xl md:text-2xl lg:text-3xl text-black">LI</p>
                             <p className="text-1xl md:text-1xl lg:text-2xl text-[#6097CE]">
                                 Software Engineer
                             </p>
@@ -95,7 +99,8 @@ const SectionTeam = () => {
                             <img src={Fandresena} width="150" height="150"/>
                         </div>
                         <div className="w-1/2 p-5 pt-12">
-                            <p className="text-1xl md:text-2xl lg:text-3xl text-black">Fandresena RAKOTOMAHEFA</p>
+                            <p className="text-1xl md:text-2xl lg:text-3xl text-black">Fandresena</p>
+                            <p className="text-[10px] md:text-[18px] lg:text-2xl text-black">RAKOTOMAHEFA</p>
                             <p className="text-1xl md:text-1xl lg:text-2xl text-[#6097CE]">
                                 Software Engineer
                             </p>
@@ -108,7 +113,8 @@ const SectionTeam = () => {
                             <img src={Maxime} width="150" height="150"/>
                         </div>
                         <div className="w-1/2 p-5 pt-12">
-                            <p className="text-1xl md:text-2xl lg:text-3xl text-black">Maxime WANG</p>
+                            <p className="text-1xl md:text-2xl lg:text-3xl text-black">Maxime</p>
+                            <p className="text-1xl md:text-2xl lg:text-3xl text-black">WANG</p>
                             <p className="text-1xl md:text-1xl lg:text-2xl text-[#6097CE]">
                                 Software Engineer
                             </p>

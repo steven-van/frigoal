@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
+import SignIn from "./pages/SignUp";
 
 
 function App() {
@@ -12,6 +13,10 @@ function App() {
       </p>
       <br></br><br></br>
       <Login />
+      <br></br><br></br>
+      <br></br><br></br>
+      <br></br><br></br>
+      <SignIn />
       <br></br><br></br>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
