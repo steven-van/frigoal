@@ -17,7 +17,7 @@ const Footer = () => {
   ];
 
   return (
-    <div className="w-full bg-[#62C9FD] left-0 bottom-0 relative">
+    <div className="w-full bg-[#6097CE] left-0 bottom-0 relative">
       <div className="flex justify-center pb-2 w-screen">
         {footerItems.map((el) => (
           <div className="w-16">
