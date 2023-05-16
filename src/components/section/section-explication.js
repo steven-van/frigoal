@@ -6,7 +6,7 @@ const SectionExplication = () => {
     const font = "font-montserrat font-thin";
 
     return (
-        <div className="relative">
+        <div id="about" className="relative">
             <div className="absolute skew-y-[356deg] bg-[#E1F2FF] w-full h-4/6 justify-center items-center mt-28 z-0">
             </div>
             <div className="flex flex-wrap justify-center items-center mr-20">

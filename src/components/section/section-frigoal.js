@@ -9,7 +9,7 @@ const SectionFrigoal = () => {
       };
 
     return (
-        <div className={`${font} flex flex-wrap justify-center items-center mr-20`}>
+        <div id="home" className={`${font} flex flex-wrap justify-center items-center mr-20`}>
             <div className="flex-1 md:w-1/2 lg:w-1/2 xl:w-1/2 ml-4 md:ml-[70px]">
                 <p className="font-sans font-bold text-3xl md:text-5xl lg:text-8xl text-left">
                     <span className="text-[#65c9ff]">FRI</span><span className="text-[#6097CE]">GOAL</span>
