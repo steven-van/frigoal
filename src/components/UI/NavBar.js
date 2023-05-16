@@ -49,7 +49,7 @@ const NavBar = () => {
         >
           <div class="flex flex-col justify-center gap-1 md:flex-row md:gap-4 text-sm lg:flex-grow">
             {Button("/", "Home")}
-            {Button("#Fridges", "Fridges")}
+            {Button("/Fridge", "Fridges")}
             {Button("#Recipes", "Recipes")}
           </div>
           {isLoggedIn ? (
