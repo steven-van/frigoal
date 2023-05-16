@@ -27,7 +27,7 @@ const Inscription = () =>{
       const font = "font-montserrat";
       
       return (
-        <div class="container mx-auto px-20">
+        <div class="flex-col container mx-auto px-20">
           <div class="box-border border-1 shadow-2xl">
             <div class="flex min-h-0">
               <div className="flex-1">

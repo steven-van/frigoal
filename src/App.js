@@ -5,7 +5,7 @@ import Home from "./pages/Home.js";
 import Login from "./pages/Login.js";
 import Profile from "./pages/Profile.js";
 import SignUp from "./pages/SignUp.js";
-import Ingredients from "./pages/Ingredients";
+import Ingredients from "./pages/Ingredients.js";
 
 function App() {
   return (
