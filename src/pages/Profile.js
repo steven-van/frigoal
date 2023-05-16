@@ -1,6 +1,5 @@
 import { useState } from "react";
-import Logo from "../assets/imgs/png/OK.jpg";
-import { ActionButton } from "../components/UI/Buttons";
+import ProfileImg from "../assets/images/png/OK.jpg";
 import Footer from "../components/UI/Footer";
 import NavBar from "../components/UI/NavBar";
 import EditIcon from "@mui/icons-material/Edit";
@@ -25,7 +24,7 @@ const Profile = ({ firstName, lastName, email, password }) => {
       </div>
       <div className="grid md:w-full lg:w-full place-items-center pt-8 h-screen">
         <div className="text-center ">
-          <img className="h-48 w-48 rounded-full" src={Logo} />
+          <img className="h-48 w-48 rounded-full" src={ProfileImg} alt="Profile img" />
           <p className="text-xl font-bold">Mohamad RESLAN</p>
         </div>
         <div>
