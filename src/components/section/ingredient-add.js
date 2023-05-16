@@ -13,18 +13,18 @@ const IngredientAdd = () => {
 
     return (
         <div className={`${font}`}>
-           <div className="mx-[80px] mt-10 md:mx-[200px] lg:mx-[380px]">
-                <h1 className="text-[35px]">
+           <div className="ml-36 mr-15 mt-10 mb-20">
+                <h1 className="text-[25px]">
                     Add a new ingredient
                 </h1>
                 <br></br>
-                <div className="mt-10">
-                    <form className="space-y-6" action="#" method="POST">
+                <div className="mt-1">
+                    <form className="space-y-1" action="#" method="POST">
                         <div>
-                            <label htmlFor="ingredientItemsName" className={`text-[18px] block font-medium leading-6 text-zinc-500 ${font}`}>
+                            <label htmlFor="ingredientItemsName" className={`text-[16px] block font-medium leading-6 text-zinc-500 ${font}`}>
                                 Ingredient Name
                             </label>
-                            <div className="mt-7">
+                            <div className="mt-1">
                                 <input
                                 id="ingredientItemsName"
                                 name="ingredientItemsName"
@@ -39,7 +39,7 @@ const IngredientAdd = () => {
                         <br></br>
                         <div className="flex">
                             <div className="flex-1">
-                                <label htmlFor="quantity" className={`text-[18px] block font-medium leading-6 text-zinc-500 ${font}`}>
+                                <label htmlFor="quantity" className={`text-[16px] block font-medium leading-6 text-zinc-500 ${font}`}>
                                     Quantity
                                 </label>
                                 <div className="mt-7 mr-5">
@@ -54,7 +54,7 @@ const IngredientAdd = () => {
                             </div>
                     
                             <div className="flex-1 ml-5">
-                                <label htmlFor="expiration" className={`text-[18px] block font-medium leading-6 text-zinc-500 ${font}`}>
+                                <label htmlFor="expiration" className={`text-[16px] block font-medium leading-6 text-zinc-500 ${font}`}>
                                     Expiration Date
                                 </label>
                                 <br></br>

@@ -1,6 +1,7 @@
 import fridge from "../../assets/imgs/svg/Freezer.svg";
 import {CancelButton, IngredientButton} from "../UI/Buttons";
-import IconFridge from "../../assets/imgs/svg/IconFridge.svg"
+import IconFridge from "../../assets/imgs/svg/IconFridge.svg";
+import IngredientAdd from "./ingredient-add";
 
 const font = "font-montserrat";
 const tab = ["ingredient1", "ingredient2 banane waouhh", "ingredient3", "ingredient4", "ingredient5", "ingredient6", "ingredient7"];
@@ -30,10 +31,7 @@ const IngredientFridge = () =>{
 
                 </div>
                 <div className="flex-1 relative">
-                    <div className={`absolute text-xs -rotate-90 text-black ml-6 mt-[450px] lg:text-[20px] lg:mt-[200px] lg:ml-[100px] ${font}`}>
-                        My Virtual Fridge
-                    </div>
-                <img className="justify-center items-center mt-[230px] ml-7 w-[13vw] md:mt-[120px] md:ml-[50px] lg:mt-[10px] lg:ml-[200px]" src={fridge} />
+                    <IngredientAdd></IngredientAdd>
                 </div>
             </div>
         </div>

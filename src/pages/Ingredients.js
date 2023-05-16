@@ -10,7 +10,6 @@ const Ingredients = () => {
       <br></br>
       <IngredientFridge></IngredientFridge>
       <br></br>
-      <IngredientAdd></IngredientAdd>
       <br></br>
       <Footer></Footer>        
     </div>
