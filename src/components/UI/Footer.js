@@ -29,6 +29,7 @@ const Footer = () => {
         <div className="flex justify-center">
           <img className="w-16" src={GitHub} alt="GitHub" />
         </div>
+
         <div className="flex justify-center pt-2 ">
           <p>2023 LSI2 - APP</p>
         </div>
