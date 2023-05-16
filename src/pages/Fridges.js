@@ -5,7 +5,7 @@ import StarOutlinedIcon from "@mui/icons-material/StarOutlined";
 const Fridges = () => {
   return (
     <div>
-      Fridges Page
+      Fridges Pag
       <div className="w-40 h-24 text-[6px] p-4">
         <div className="relative">
           <div className="relative">
