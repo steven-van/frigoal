@@ -8,6 +8,9 @@ const SignIn = () => {
     <div>
       <NavBar />
       <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
       <Inscription />
       <br></br>
       <br></br>

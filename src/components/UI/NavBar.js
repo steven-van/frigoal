@@ -26,8 +26,8 @@ const NavBar = () => {
   };
 
   return (
-    <nav class="flex items-center justify-between flex-wrap bg-[#FFFFFF] m-10">
-      <div className="w-full flex relative justify-center items-center">
+    <nav class="flex items-center justify-between flex-wrap bg-[#FFFFFF] pl-10 fixed w-[100vw] lg:w-[100vw] -mt-1 py-6 z-50 lg:mb-[900px]">
+      <div className="w-full flex relative justify-center items-center mr-10">
         <div className="absolute left-0">
           <div class="md:w-40 w-24" onClick={() => LogoOnClick()}>
             <img src={logo} alt="Frigoal Logo"></img>

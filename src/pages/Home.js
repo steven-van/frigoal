@@ -11,6 +11,9 @@ const Home = () => {
   return (
     <div>
     <NavBar />
+    <br></br>
+    <br></br>
+    <br></br>
     <SectionFrigoal />
     <SectionExplication />
     <SectionTech />
