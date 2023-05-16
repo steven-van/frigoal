@@ -2,7 +2,7 @@ export const ActionButton = ({ color, title }) => {
   return (
     <div>
       <button
-        className={`grid place-items-center bg-[${color}] w-20 rounded-md text-center`}
+        className={`grid place-items-center bg-[${color}] w-20 h-10 text-white rounded-md text-center`}
       >
         {title}
       </button>

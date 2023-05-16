@@ -4,9 +4,10 @@ import { ActionButton } from "../components/UI/Buttons";
 import Footer from "../components/UI/Footer";
 import NavBar from "../components/UI/NavBar";
 import EditIcon from "@mui/icons-material/Edit";
+import { useRef } from "react";
 
 const Profile = ({ firstName, lastName, email, password }) => {
-  const [isFocused, setFocused] = useState(true);
+  const [isDisabled, setDisabled] = useState(true);
 
   const inputItems = [
     { label: "First Name", value: firstName, type: "text" },
@@ -14,6 +15,8 @@ const Profile = ({ firstName, lastName, email, password }) => {
     { label: "Email", value: email, type: "email" },
     { label: "Password", value: password, type: "password" },
   ];
+
+  const ref = useRef([1, 2, 3, 4]);
 
   return (
     <div>
@@ -25,8 +28,8 @@ const Profile = ({ firstName, lastName, email, password }) => {
           <img className="h-48 w-48 rounded-full" src={Logo} />
           <p className="text-xl font-bold">Mohamad RESLAN</p>
         </div>
-        <div className="">
-          <div className="">
+        <div>
+          <div>
             <p className="text-xl font-bold">Profile</p>
             <p className="text-xs ">
               This information will be displayed publicly so be careful what you
@@ -34,24 +37,25 @@ const Profile = ({ firstName, lastName, email, password }) => {
             </p>
           </div>
           <div className="grid grid-cols-2 gap-6">
-            {inputItems.map((item) => (
+            {inputItems.map((item, index) => (
               <div className="mt-6 relative">
                 <div>{item.label}</div>
                 <div className="flex items-center">
                   <input
-                    autoFocus={isFocused}
-                    disabled={isFocused}
+                    disabled={isDisabled}
                     className="border-2 pl-2 border-black-900 relative h-10 w-96"
                     type={item.type}
                     value={item.value}
-                    id="name"
+                    id={item.label}
                     name="name"
                     required
+                    ref={(el) => (ref[index] = el)}
                   />
                   <div
                     className="absolute cursor-pointer right-0 pr-2"
                     onClick={() => {
-                      setFocused(false);
+                      setDisabled(false);
+                      ref[index].focus();
                     }}
                   >
                     <EditIcon />
@@ -62,20 +66,19 @@ const Profile = ({ firstName, lastName, email, password }) => {
           </div>
         </div>
         <div className="flex space-x-5">
-          <div
+          <button
+            className={`grid place-items-center border-[#E5E7E9] border-2 w-20 h-10 rounded-md text-center`}
+          >
+            Cancel
+          </button>
+          <button
+            className={`grid place-items-center  bg-[#74ceff] w-20 h-10 text-white rounded-md text-center`}
             onClick={() => {
-              setFocused(true);
+              setDisabled(true);
             }}
           >
-            <ActionButton title="Cancel" color="white" />
-          </div>
-          <div
-            onClick={() => {
-              setFocused(true);
-            }}
-          >
-            <ActionButton title="Save" color="#74ceff" />
-          </div>
+            Save
+          </button>
         </div>
       </div>
       <Footer />
