@@ -9,7 +9,6 @@ const IngredientAdd = () => {
 
     const font = "font-montserrat";
 
-
     const [startDate, setStartDate] = useState(new Date());  
 
     return (
@@ -59,7 +58,9 @@ const IngredientAdd = () => {
                                     Expiration Date
                                 </label>
                                 <br></br>
-                                <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} /> 
+
+                                <DatePicker dateFormat="dd/MM/yyyy" selected={startDate} onChange={(date) => setStartDate(date)} /> 
+
                             </div>
                         </div>
 
