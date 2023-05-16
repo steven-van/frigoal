@@ -9,7 +9,7 @@ const IngredientFridge = () =>{
         <div class="container mx-auto px-20">
             <div class="flex min-h-0">
                 <div className="flex-1">
-                    <div className={`flex flex-row space-x-4 text-xl font-bold text-black ${font}`}>
+                    <div className={`flex flex-row space-x-10 text-xl font-bold text-black ${font}`}>
                         <div>
                             My Ingredients 
                         </div>
@@ -22,7 +22,7 @@ const IngredientFridge = () =>{
                         {CancelButton()}
                     </div>
                     <br></br>
-                    <div className="grid grid-cols-4 gap-4">
+                    <div className="grid grid-cols-3 gap-4">
                         {tab.map((e) => <IngredientButton label={e} key={e}/>
                             )
                         }
@@ -30,10 +30,10 @@ const IngredientFridge = () =>{
 
                 </div>
                 <div className="flex-1 relative">
-                    <div className={`absolute text-xs -rotate-90 text-black ml-6 mt-[450px] lg:text-[20px] lg:mt-[300px] lg:ml-[100px] ${font}`}>
+                    <div className={`absolute text-xs -rotate-90 text-black ml-6 mt-[450px] lg:text-[20px] lg:mt-[200px] lg:ml-[100px] ${font}`}>
                         My Virtual Fridge
                     </div>
-                <img className="justify-center items-center mt-[230px] ml-7 w-[23vw] md:mt-[120px] md:ml-[50px] lg:mt-[10px] lg:ml-[200px]" src={fridge} />
+                <img className="justify-center items-center mt-[230px] ml-7 w-[13vw] md:mt-[120px] md:ml-[50px] lg:mt-[10px] lg:ml-[200px]" src={fridge} />
                 </div>
             </div>
         </div>
