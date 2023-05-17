@@ -1,21 +1,40 @@
 import Recipe from "../assets/images/svg/recipe.svg";
-import StarBorderIcon from "@mui/icons-material/StarBorder";
 import StarOutlinedIcon from "@mui/icons-material/StarOutlined";
+import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import { useState } from "react";
 
 const Fridges = () => {
+  const [starColor, setStarColor] = useState("white");
+  const initialColor = "white";
+
   return (
     <div>
       Fridges Pag
-      <div className="w-40 h-24 text-[6px] p-4">
+      <div className="w-60 text-[6px] p-4 ">
         <div className="relative">
           <div className="relative">
             <img className="w-full" src={Recipe}></img>
           </div>
-          <div className="absolute right-0 bottom-0">
-            <StarOutlinedIcon style={{ color: "white", width: "10px" }} />
+          <div className="absolute bottom-0.5 right-1">
+            <StarOutlinedIcon
+              onClick={() => {
+                initialColor === starColor
+                  ? setStarColor("#F9C22F")
+                  : setStarColor("white");
+              }}
+              style={{ color: starColor, width: "12px", height: "16px" }}
+            />
           </div>
         </div>
-        <div>Sushi saumon, california and maki</div>
+        <div className="mt-2 font-semibold">
+          Sushi saumon, california and maki
+        </div>
+        <div className="flex items-center text-[#666666]">
+          <AccessTimeIcon
+            style={{ color: "#666666", width: "12px", height: "16px" }}
+          />
+          <div className="ml-1">15 min</div>
+        </div>
       </div>
     </div>
   );
