@@ -5,7 +5,7 @@ const Fridges = () => {
     <div>
       Fridges Pag
       <div>
-        <RecipeComponent />
+        <RecipeComponent title="Sushi" duration={12} />
       </div>
     </div>
   );
