@@ -8,30 +8,32 @@ const RecipeComponent = (props) => {
   const initialColor = "white";
 
   return (
-    <div className="w-60 text-[6px] p-4 ">
-      <div className="relative">
-        <div className="relative">
-          <img className="w-full" src={Recipe} alt="recipe" />
-          <div className="absolute bottom-0.5 right-1">
-            <Tooltip title="Ajouter aux favoris">
-              <StarOutlinedIcon
-                onClick={() => {
-                  initialColor === starColor
-                    ? setStarColor("#F9C22F")
-                    : setStarColor("white");
-                }}
-                style={{
-                  color: starColor,
-                  width: "20px",
-                  height: "24px",
-                  cursor: "pointer",
-                }}
-              />
-            </Tooltip>
-          </div>
+    <div className="text-[6px] p-4">
+      <div className="w-[115px] h-[66px] relative">
+        <img
+          className="w-[115px] h-[66px] rounded-md"
+          src={Recipe}
+          alt="recipe"
+        />
+        <div className="absolute bottom-0.5 right-1">
+          <Tooltip title="Ajouter aux favoris">
+            <StarOutlinedIcon
+              onClick={() => {
+                initialColor === starColor
+                  ? setStarColor("#F9C22F")
+                  : setStarColor("white");
+              }}
+              style={{
+                color: starColor,
+                width: "12px",
+                height: "12px",
+                cursor: "pointer",
+              }}
+            />
+          </Tooltip>
         </div>
       </div>
-      <div className="mt-2 font-semibold">{props.title}</div>
+      <div className="mt-2 font-bold">{props.title}</div>
       <div className="flex items-center text-[#666666]">
         <AccessTimeIcon
           style={{ color: "#666666", width: "12px", height: "16px" }}
