@@ -1,5 +1,6 @@
 import SignIn from "../../assets/images/svg/SignIn.svg";
 import { useNavigate } from "react-router-dom";
+import React, { useState } from "react";
 
 const Inscription = () => {
 
@@ -27,7 +28,43 @@ const Inscription = () => {
 
     const font = "font-montserrat";
 
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [confirmPassword, setConfirmPassword] = useState("");
+    const [passwordMatch, setPasswordMatch] = useState(true);
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
+
     const navigate = useNavigate();
+
+    function handleConfirmPasswordChange(event) {
+        const confirmPassword = event.target.value;
+        const match = password === confirmPassword;
+        setPasswordMatch(match);
+        setConfirmPassword(confirmPassword);
+    }
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+
+        if (passwordMatch) {
+            fetch("/signup", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ email, password, firstName, lastName })
+            })
+                .then(response => {
+                    console.log(response);
+                    navigate("/login");
+                })
+                .catch(error => {
+                    console.log(error);
+                });
+        }
+
+    }
 
     return (
         <div class="container mx-auto px-20">
@@ -43,7 +80,48 @@ const Inscription = () => {
                                 </div>
 
                                 <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-                                    <form className="space-y-6" action="#" method="POST">
+                                    <form
+                                        className="space-y-6"
+                                        onSubmit={handleSubmit}
+                                        method="POST"
+                                    >
+
+                                        <div className="flex items-center justify-between">
+                                            <div>
+                                                <label htmlFor="fName" className={`block text-sm font-medium leading-6 text-gray-900 ${font}`}>
+                                                    First Name
+                                                </label>
+                                                <div className="mt-2">
+                                                    <input
+                                                        id="firstName"
+                                                        name="firstName"
+                                                        type="firstName"
+                                                        value={firstName}
+                                                        onChange={event => setFirstName(event.target.value)}
+                                                        required
+                                                        className="block rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                                    />
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <label htmlFor="lName" className={`block text-sm font-medium leading-6 text-gray-900 ${font}`}>
+                                                    Last Name
+                                                </label>
+                                                <div className="mt-2">
+                                                    <input
+                                                        id="lastName"
+                                                        name="lastName"
+                                                        type="lastName"
+                                                        value={lastName}
+                                                        onChange={event => setLastName(event.target.value)}
+                                                        required
+                                                        className="block rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+
                                         <div>
                                             <label htmlFor="email" className={`block text-sm font-medium leading-6 text-gray-900 ${font}`}>
                                                 Email adress
@@ -54,6 +132,8 @@ const Inscription = () => {
                                                     name="email"
                                                     type="email"
                                                     autoComplete="email"
+                                                    value={email}
+                                                    onChange={event => setEmail(event.target.value)}
                                                     required
                                                     className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                                 />
@@ -72,6 +152,8 @@ const Inscription = () => {
                                                     name="password"
                                                     type="password"
                                                     autoComplete="current-password"
+                                                    value={password}
+                                                    onChange={event => setPassword(event.target.value)}
                                                     required
                                                     className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                                 />
@@ -89,9 +171,14 @@ const Inscription = () => {
                                                     id="confirmPassword"
                                                     name="confirmPassword"
                                                     type="password"
+                                                    value={confirmPassword}
+                                                    onChange={handleConfirmPasswordChange}
                                                     required
                                                     className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                                 />
+                                                {!passwordMatch && (
+                                                    <p className="text-sm font-medium text-red-800">Password does not match</p>
+                                                )}
                                             </div>
                                         </div>
 
@@ -110,7 +197,7 @@ const Inscription = () => {
                                                 onClick={() => { navigate("/login") }}
                                                 class={`font-semibold leading-6 text-[#65C9FF] hover:text-[#6097CE] ${font}`}
                                             >
-                                                Log In
+                                                &nbsp; Log In
                                             </button>
                                         </p>
                                     </form>
