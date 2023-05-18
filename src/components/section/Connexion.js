@@ -1,5 +1,6 @@
 import bonhomme from "../../assets/images/svg/bonhomme.svg";
 import { useNavigate } from "react-router-dom";
+import React, { useState } from "react";
 
 const Connexion = () => {
 
@@ -26,8 +27,30 @@ const Connexion = () => {
     }
 
     const font = "font-montserrat";
-    
+
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
     const navigate = useNavigate();
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+
+        fetch("/login", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ email, password })
+        })
+            .then(response => {
+                console.log(response);
+                navigate("/");
+            })
+            .catch(error => {
+                console.log(error);
+            });
+    }
 
     return (
         <div class="container mx-auto px-20">
@@ -43,7 +66,11 @@ const Connexion = () => {
                                 </div>
 
                                 <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-                                    <form className="space-y-6" action="#" method="POST">
+                                    <form
+                                        className="space-y-6"
+                                        onSubmit={handleSubmit}
+                                        method="POST"
+                                    >
                                         <div>
                                             <label htmlFor="email" className={`block text-sm font-medium leading-6 text-gray-900 ${font}`}>
                                                 Email adress
@@ -54,6 +81,8 @@ const Connexion = () => {
                                                     name="email"
                                                     type="email"
                                                     autoComplete="email"
+                                                    value={email}
+                                                    onChange={event => setEmail(event.target.value)}
                                                     required
                                                     className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                                 />
@@ -72,6 +101,8 @@ const Connexion = () => {
                                                     name="password"
                                                     type="password"
                                                     autoComplete="current-password"
+                                                    value={password}
+                                                    onChange={event => setPassword(event.target.value)}
                                                     required
                                                     className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                                 />
@@ -92,7 +123,7 @@ const Connexion = () => {
                                             <button onClick={() => { navigate("/signup") }}
                                                 class={`font-semibold leading-6 text-[#6097CE] hover:text-[#65C9FF] ${font}`}
                                             >
-                                                Sign Up
+                                                &nbsp; Sign Up
                                             </button>
                                         </p>
                                     </form>

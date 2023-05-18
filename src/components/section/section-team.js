@@ -11,7 +11,7 @@ const SectionTeam = () => {
   return (
     <div
       id="team"
-      className={`${font} font-thin flex justify-center items-center h-screen flex-col mb-60`}
+      className={`${font} font-thin flex justify-center items-center h-full flex-col mb-36`}
     >
       {/* Affichage du titre de la section */}
       <div>

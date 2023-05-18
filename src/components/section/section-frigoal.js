@@ -15,7 +15,7 @@ const SectionFrigoal = () => {
                     <span className="text-[#65c9ff]">FRI</span><span className="text-[#6097CE]">GOAL</span>
                 </p>
                 
-                <p className={'font-thin text-lg md:text-xl lg:text-3xl text-left md:mt-7 ${font}'} style={{lineHeight:'1.3'}}>
+                <p className={`font-thin text-lg md:text-xl lg:text-3xl text-left md:mt-7 ${font}`} style={{lineHeight:'1.3'}}>
                     The ultimate defense against food waste and lack of culinary inspiration!
                 </p>
                 <button onClick={goToSingUp} className="float-left rounded-full text-white hover:bg-[#6097CE] bg-[#65c9ff] px-5 py-2 md:py-1 mt-7 md:mt-7 ">Sign Up</button>
