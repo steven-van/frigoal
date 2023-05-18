@@ -1,8 +1,14 @@
+import RecipeComponent from "../components/UI/RecipeComponent";
+
 const Recipes = () => {
-    return <div>
+  return (
+    <div>
       Recipes Page
-    </div>;
-  };
-  
-  export default Recipes;
-  
+      <div>
+        <RecipeComponent title="Sushi" duration={12} />
+      </div>
+    </div>
+  );
+};
+
+export default Recipes;
