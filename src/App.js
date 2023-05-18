@@ -8,19 +8,19 @@ import Fridges from "./pages/Fridges.js";
 import NotFound from "./pages/NotFound.js";
 
 function App() {
-    return (
-        <BrowserRouter>
-            <Routes>
-                <Route index path="/" element={<Home />} />
-                <Route exact path="/login" element={<Login />} />
-                <Route exact path="/signup" element={<SignUp />} />
-                <Route exact path="/recipes" element={<Recipes />} />
-                <Route exact path="/fridges" element={<Fridges />} />
-                <Route exact path="/profile" element={<Profile />} />
-                <Route path="*" element={<NotFound />} />
-            </Routes>
-        </BrowserRouter>
-    );
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route index path="/" element={<Home />} />
+        <Route exact path="/login" element={<Login />} />
+        <Route exact path="/signup" element={<SignUp />} />
+        <Route exact path="/recipes" element={<Recipes />} />
+        <Route exact path="/fridges" element={<Fridges />} />
+        <Route exact path="/profile" element={<Profile />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
