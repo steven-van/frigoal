@@ -10,6 +10,7 @@ import Recipe from "./pages/Recipe";
 function App() {
   return (
     <div>
+    <Recipe />
     <BrowserRouter>
       <Routes>
         <Route exact path="/" element={<Home />} />
