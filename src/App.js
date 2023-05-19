@@ -5,9 +5,11 @@ import Home from "./pages/Home.js";
 import Login from "./pages/Login.js";
 import Profile from "./pages/Profile.js";
 import SignUp from "./pages/SignUp.js";
+import Recipe from "./pages/Recipe";
 
 function App() {
   return (
+    <div>
     <BrowserRouter>
       <Routes>
         <Route exact path="/" element={<Home />} />
@@ -16,6 +18,7 @@ function App() {
         <Route exact path="/SignUp" element={<SignUp />} />
       </Routes>
     </BrowserRouter>
+    </div>
   );
 }
 
