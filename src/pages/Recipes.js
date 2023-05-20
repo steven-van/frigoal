@@ -15,7 +15,7 @@ const Recipes = () => {
     <div>
       <NavBar />
       <Filter />
-      <div className="mx-10 text-[30px]">{recipes.length} Résultats</div>
+      <div className="mx-10 text-[30px]">{recipes.length} Results</div>
       <div className="grid grid-cols-3" id="recipe">
         {recipes.map((el, index) => (
           <RecipeComponent title={el.title} duration={el.duration} />

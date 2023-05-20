@@ -9,7 +9,7 @@ const RecipeComponent = (props) => {
 
   return (
     <div className="text-[24px] mx-10 my-10">
-      <div className="w-[415px] h-[396px] relative">
+      <div className="w-[415px] h-[366px] relative">
         <img
           className="w-[415px] h-[366px] rounded-md"
           src={Recipe}
@@ -25,8 +25,8 @@ const RecipeComponent = (props) => {
               }}
               style={{
                 color: starColor,
-                width: "12px",
-                height: "12px",
+                width: "52px",
+                height: "52px",
                 cursor: "pointer",
               }}
             />
