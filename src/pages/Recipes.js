@@ -1,9 +1,10 @@
 import RecipeComponent from "../components/UI/RecipeComponent";
+import Filter from "../components/UI/Filter";
 
 const Recipes = () => {
   return (
     <div>
-      Recipes Page
+      <Filter />
       <div>
         <RecipeComponent title="Sushi" duration={12} />
       </div>
