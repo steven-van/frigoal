@@ -8,10 +8,10 @@ const RecipeComponent = (props) => {
   const initialColor = "white";
 
   return (
-    <div className="text-[6px] p-4">
-      <div className="w-[115px] h-[66px] relative">
+    <div className="text-[24px] mx-10 my-10">
+      <div className="w-[415px] h-[396px] relative">
         <img
-          className="w-[115px] h-[66px] rounded-md"
+          className="w-[415px] h-[366px] rounded-md"
           src={Recipe}
           alt="recipe"
         />
@@ -36,7 +36,7 @@ const RecipeComponent = (props) => {
       <div className="mt-2 font-bold">{props.title}</div>
       <div className="flex items-center text-[#666666]">
         <AccessTimeIcon
-          style={{ color: "#666666", width: "12px", height: "16px" }}
+          style={{ color: "#666666", width: "22px", height: "26px" }}
         />
         <div className="ml-1">{props.duration} min</div>
       </div>
