@@ -2,7 +2,6 @@ import Connexion from "../components/section/Connexion";
 import Footer from "../components/UI/Footer";
 import NavBar from "../components/UI/NavBar";
 
-
 const Login = () => {
     return (
         <div>
@@ -11,7 +10,7 @@ const Login = () => {
             <Connexion />
             <br></br>
             <br></br>
-            <Footer></Footer>
+            <Footer />
         </div>
 
     );

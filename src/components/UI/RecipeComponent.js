@@ -3,15 +3,17 @@ import StarOutlinedIcon from "@mui/icons-material/StarOutlined";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import { useState } from "react";
 import Tooltip from "@mui/material/Tooltip";
+
 const RecipeComponent = (props) => {
+    
     const [starColor, setStarColor] = useState("white");
     const initialColor = "white";
 
     return (
-        <div className="text-[6px] p-4">
-            <div className="w-[115px] h-[66px] relative">
+        <div className="text-[24px] mx-10 my-10">
+            <div className="w-[415px] h-[366px] relative">
                 <img
-                    className="w-[115px] h-[66px] rounded-md"
+                    className="w-[415px] h-[366px] rounded-md"
                     src={Recipe}
                     alt="recipe"
                 />
@@ -25,8 +27,8 @@ const RecipeComponent = (props) => {
                             }}
                             style={{
                                 color: starColor,
-                                width: "12px",
-                                height: "12px",
+                                width: "52px",
+                                height: "52px",
                                 cursor: "pointer",
                             }}
                         />
@@ -36,7 +38,7 @@ const RecipeComponent = (props) => {
             <div className="mt-2 font-bold">{props.title}</div>
             <div className="flex items-center text-[#666666]">
                 <AccessTimeIcon
-                    style={{ color: "#666666", width: "12px", height: "16px" }}
+                    style={{ color: "#666666", width: "22px", height: "26px" }}
                 />
                 <div className="ml-1">{props.duration} min</div>
             </div>
