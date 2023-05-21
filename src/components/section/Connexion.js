@@ -1,6 +1,7 @@
 import bonhomme from "../../assets/images/svg/bonhomme.svg";
 import { useNavigate } from "react-router-dom";
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { AuthContext } from "../../AuthContext";
 
 const Connexion = () => {
     const cercle1 = {
@@ -27,6 +28,7 @@ const Connexion = () => {
 
     const font = "font-montserrat";
 
+    const { setIsLoggedIn } = useContext(AuthContext);
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
@@ -44,6 +46,7 @@ const Connexion = () => {
         })
             .then((response) => {
                 console.log(response);
+                setIsLoggedIn(true);
                 navigate("/");
             })
             .catch((error) => {
