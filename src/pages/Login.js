@@ -4,17 +4,17 @@ import NavBar from "../components/UI/NavBar";
 
 
 const Login = () => {
-  return (
-    <div>
-      <NavBar />
-      <br></br>
-      <Connexion />
-      <br></br>
-      <br></br>
-      <Footer></Footer>
-    </div>
+    return (
+        <div>
+            <NavBar />
+            <br></br>
+            <Connexion />
+            <br></br>
+            <br></br>
+            <Footer></Footer>
+        </div>
 
-  );
+    );
 };
 
 export default Login;

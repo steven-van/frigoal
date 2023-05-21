@@ -4,16 +4,16 @@ import NavBar from "../components/UI/NavBar";
 
 
 const SignIn = () => {
-  return (
-    <div>
-      <NavBar />
-      <br></br>
-      <Inscription />
-      <br></br>
-      <br></br>
-      <Footer />
-    </div>
-  );
+    return (
+        <div>
+            <NavBar />
+            <br></br>
+            <Inscription />
+            <br></br>
+            <br></br>
+            <Footer />
+        </div>
+    );
 };
 
 export default SignIn;
