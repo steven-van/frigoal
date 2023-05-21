@@ -10,7 +10,7 @@ function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
 }
 
-const Dropdown = ({isLoggedIn})  => {
+const Dropdown = ({ isLoggedIn }) => {
     const navigate = useNavigate();
 
     return (
@@ -60,7 +60,7 @@ const Dropdown = ({isLoggedIn})  => {
                         <Menu.Item>
                             {({ active }) => (
                                 <button
-                                    onClick={() => {navigate("/"); isLoggedIn()}}
+                                    onClick={() => { navigate("/"); isLoggedIn() }}
                                     className={classNames(
                                         active ? "bg-gray-100 text-gray-900" : "text-gray-700",
                                         "px-4 py-2 w-full text-sm flex justify-start items-center"
