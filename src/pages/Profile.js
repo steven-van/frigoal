@@ -1,5 +1,5 @@
 import { useContext, useState, useEffect } from "react";
-import ProfileImg from "../assets/images/svg/avatar.svg";
+import ProfileImg from "../assets/images/svg/nathalie.svg";
 import Footer from "../components/UI/Footer";
 import NavBar from "../components/UI/NavBar";
 import EditIcon from "@mui/icons-material/Edit";
@@ -49,6 +49,10 @@ const Profile = () => {
     <div>
       <div>
         <NavBar />
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
       </div>
       <div className="grid md:w-full lg:w-full place-items-center pt-8 h-screen">
         <div className="text-center ">

@@ -47,7 +47,7 @@ const Connexion = () => {
       .then((response) => {
         if (response.status === 200) {
           setIsLoggedIn(true);
-          localStorage.setItem('isLoggedIn', 'true');
+          localStorage.setItem("isLoggedIn", "true");
           navigate("/");
         } else if (response.status === 401) {
           console.log("Authentification failed");
@@ -164,7 +164,7 @@ const Connexion = () => {
                 style={cercle2}
               ></div>
               <div
-                className="bg-stone-400 rounded-s-3xl left-32 top-[330px] shadow-2xl sm:left-[180px] sm:top-[200px] md:left-56 md:top-32 lg:left-[27vw] lg:top-2"
+                className="bg-stone-400 rounded-s-3xl left-32 top-[330px] shadow-2xl sm:left-[180px] sm:top-[200px] md:left-56 md:top-32 lg:left-[27vw] lg:-top-[10px]"
                 style={cercle3}
               ></div>
             </div>

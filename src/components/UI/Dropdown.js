@@ -2,7 +2,7 @@ import { Fragment, useContext } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../AuthContext";
-import defaultAvatar from "../../assets/images/svg/avatar.svg";
+import defaultAvatar from "../../assets/images/svg/nathalie.svg";
 import iconSignOut from "../../assets/images/svg/logo-sign-out.svg";
 import iconAccountSettings from "../../assets/images/svg/logo-account-setting.svg";
 

@@ -248,7 +248,7 @@ const Inscription = () => {
 
             <div class="flex z-8 absolute">
               <div
-                className={`flex-1 font-bold text-[20px] text-slate-50 ml-6 mt-[450px] lg:text-[35px] lg:mt-[430px] lg:ml-[50px] ${font}`}
+                className={`flex-1 font-bold text-[20px] text-slate-50 ml-6 mt-[450px] lg:text-[35px] lg:mt-[510px] lg:ml-[50px] ${font}`}
               >
                 Hey<br></br>Welcome<br></br>To Frigoal !
               </div>
