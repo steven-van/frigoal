@@ -29,7 +29,7 @@ const Connexion = () => {
   const font = "font-montserrat";
 
   const { setIsLoggedIn } = useContext(AuthContext);
-  const [email, setEmail] = useState("");
+  const { email, setEmail } = useContext(AuthContext);
   const [password, setPassword] = useState("");
 
   const navigate = useNavigate();
