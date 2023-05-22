@@ -47,6 +47,7 @@ const Connexion = () => {
       .then((response) => {
         if (response.status === 200) {
           setIsLoggedIn(true);
+          localStorage.setItem('isLoggedIn', 'true');
           navigate("/");
         } else if (response.status === 401) {
           console.log("Authentification failed");
