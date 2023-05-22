@@ -46,7 +46,6 @@ const Connexion = () => {
     })
       .then((response) => {
         if (response.status === 200) {
-          console.log(response);
           setIsLoggedIn(true);
           navigate("/");
         } else if (response.status === 401) {
