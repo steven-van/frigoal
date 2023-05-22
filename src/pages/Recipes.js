@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import RecipeComponent from "../components/UI/RecipeComponent";
 import Filter from "../components/UI/Filter";
 import NavBar from "../components/UI/NavBar";
+import Footer from "../components/UI/Footer";
 
 const Recipes = () => {
   const [recipes, setRecipes] = useState([]);
@@ -42,6 +43,7 @@ const Recipes = () => {
           />
         ))}
       </div>
+      <Footer />
     </div>
   );
 };
