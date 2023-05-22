@@ -7,6 +7,9 @@ const Login = () => {
         <div>
             <NavBar />
             <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
             <Connexion />
             <br></br>
             <br></br>
